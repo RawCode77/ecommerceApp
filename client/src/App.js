@@ -1,15 +1,22 @@
 import React from "react";
+// import { Route, BrowserRouter as Router } from "react-router-dom";
+// import { Router } from "react-router-dom";
 
 // importing general components
-import "./App.css";
 import NavBar from "./components/general/NavBar.js";
-//public\assets\images\devshop.jpg
+
+//landing page components
+// import Background from "./components/landing/background.js";
+import "./App.css";
+
 function App() {
   return (
-    <div className="App">
-      <NavBar />
-     
-    </div>
+    
+      <div className="App">
+        <NavBar />
+        
+      </div>
+    
   );
 }
 
