@@ -11,7 +11,7 @@ import {
 } from "../actions/types";
 
 const initialState = {
-  isAuthenticated: localStorage.getItem("token") ? true : false,
+  isAuthenticated: false,
   token: localStorage.getItem("token"),
   user: {},
   errors: [],

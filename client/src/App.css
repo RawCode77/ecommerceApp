@@ -363,9 +363,9 @@ button {
 
 /* Landing Page */
 .landing {
-  /* margin-top: 6.3%; */
+  margin-top: 6.3%;
   position: relative;
-  background: url("/public/assets/images/devshop1.jpg") no-repeat center center/cover;
+  background: url("/public/assets/images/devshop1.jpg") no-repeat center/cover;
   height: 60vh;
 }
 
