@@ -101,12 +101,12 @@ user, name, description, category, Price, brands, quantity
 
 ## Coupling the Backend to Frontend
 
-
+`Coming Soon...`
 
 
 ## DevOps Integration
 
-
+`Coming Soon...`
 
 
 
