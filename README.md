@@ -99,23 +99,14 @@ user, name, description, category, Price, brands, quantity
 ![Creating Models](https://github.com/RawCode77/ecommerceApp/assets/124092089/5fa5f896-1047-4cf2-a7b0-3c3bd30e6445)
 
 
-## Roadmap
-
-- Additional browser support
-
-- Add more integrations
+## Coupling the Backend to Frontend
 
 
-## Usage/Examples
-
-```javascript
-import Component from 'my-project'
-
-function App() {
-  return <Component />
-}
-```
 
 
-![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
+## DevOps Integration
+
+
+
+
 
