@@ -96,7 +96,7 @@ user, name, description, category, Price, brands, quantity
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![Creating Models](https://github.com/RawCode77/ecommerceApp/assets/124092089/5fa5f896-1047-4cf2-a7b0-3c3bd30e6445)
 
 
 ## Roadmap
