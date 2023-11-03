@@ -365,8 +365,8 @@ button {
 .landing {
   margin-top: 6.3%;
   position: relative;
-  background: url("/public/assets/images/devshop1.jpg") no-repeat center/cover;
-  height: 60vh;
+  background: url("/public/assets/images/devshop1.jpg") no-repeat center center/cover;
+  height: 40vh;
 }
 
 .landing-inner {

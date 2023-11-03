@@ -1,4 +1,4 @@
-import { isEmpty } from "lodash"; //isEmpty is missing inside the brackets, use "npm i radash"
+import { isEmpty } from "ladash";
 import {
   AUTH_ERROR,
   ERRORS,
@@ -16,8 +16,8 @@ const initialState = {
   user: {},
   errors: [],
 };
-
-export default function authReducer(state = initialState, action) {
+/*  eslint-disable import/no-anonymous-default-export  */
+export default function (state = initialState, action) {
   const { payload } = action;
   switch (action.type) {
     case SET_CURRENT_USER:
@@ -26,6 +26,7 @@ export default function authReducer(state = initialState, action) {
         isAuthenticated: !isEmpty(action.payload),
         user: payload,
       };
+
     case SUCCESSFUL_REGISTER:
     case SUCCESSFUL_LOGIN:
       localStorage.setItem("token", payload.token);

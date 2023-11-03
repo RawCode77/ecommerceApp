@@ -1,25 +1,27 @@
 import React from "react";
-// import { Provider } from "react-redux";
-import { BrowserRouter as Router, Routes } from "react-router-dom";
-// import store from "./store";
+import { Provider } from "react-redux";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { store } from "./store";
 
 // importing general components
-import NavBar from "./components/general/NavBar.js";
+import NavBar from "./components/general/NavBar";
 
 //landing page components
 import "./App.css";
-import Background from "./components/landing/background.js";
+import background from "./components/landing/background";
 
 function App() {
   return (
-    // <Provider >
-    <Router>
-      <div className="App">
-        <NavBar />
-        <Routes exact path="/" component={Background} />
-      </div>
-    </Router>
-    // </Provider>
+    <Provider store={store}>
+      <Router>
+        <div className="App">
+          <NavBar />
+          <Routes>
+            <Route exact path="/" component={background} />
+          </Routes>
+        </div>
+      </Router>
+    </Provider>
   );
 }
 

@@ -1,4 +1,4 @@
-import { configureStore } from "@reduxjs/toolkit";
+import { applyMiddleware, compose, createStore } from "redux";
 import thunk from "redux-thunk";
 import rootReducer from "./reducers";
 
@@ -8,20 +8,17 @@ const middleware = [thunk];
 let store;
 
 try {
-  store = configureStore({
-    reducer: rootReducer,
-    middleware,
-    preloadedState: initialState,
-  });
+  store = createStore(
+    rootReducer,
+    initialState,
+    compose(applyMiddleware(...middleware))
+  );
 } catch (error) {
-  console.error("An error occurred while creating the store:", error);
-
-  // Attempt to recreate the store if an error occurs
-  store = configureStore({
-    reducer: rootReducer,
-    middleware,
-    preloadedState: initialState,
-  });
+  store = createStore(
+    rootReducer,
+    initialState,
+    compose(applyMiddleware(...middleware))
+  );
 }
 
 export default store;

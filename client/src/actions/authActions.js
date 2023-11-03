@@ -1,15 +1,15 @@
 import axios from "axios";
 import { getServer } from "../util";
-import setAuthToken from "../util/setAuthToken";
+import { setAuthToken } from "../util/setAuthToken";
 import {
-  AUTH_ERROR,
-  ERRORS,
-  FAILURE_LOGIN,
-  FAILURE_REGISTER,
-  LOGOUT,
   SET_CURRENT_USER,
-  SUCCESSFUL_LOGIN,
   SUCCESSFUL_REGISTER,
+  FAILURE_REGISTER,
+  ERRORS,
+  AUTH_ERROR,
+  SUCCESSFUL_LOGIN,
+  FAILURE_LOGIN,
+  LOGOUT,
 } from "./types";
 
 //set a user
@@ -18,7 +18,7 @@ export const setCurrentUser = (user) => async (dispatch) => {
     setAuthToken(localStorage.token);
   }
   try {
-    const res = await axios.get(`${getServer()}/api/auth`);
+    const res = await axios.get(`${getServer}/api/auth`);
     dispatch({
       type: SET_CURRENT_USER,
       payload: res.data,
@@ -38,7 +38,7 @@ export const register = (userData) => async (dispatch) => {
     },
   };
   try {
-    const res = await axios.post(`${getServer()}/api/users`, userData, config);
+    const res = await axios.post(`${getServer}/api/users`, userData, config);
     dispatch({
       type: SUCCESSFUL_REGISTER,
       payload: res.data,
@@ -67,7 +67,7 @@ export const login = (userData) => async (dispatch) => {
     },
   };
   try {
-    const res = await axios.post(`${getServer()}/api/auth`, userData, config);
+    const res = await axios.post(`${getServer}/api/auth`, userData, config);
     dispatch({
       type: SUCCESSFUL_LOGIN,
       payload: res.data,
