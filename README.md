@@ -96,26 +96,17 @@ user, name, description, category, Price, brands, quantity
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![Creating Models](https://github.com/RawCode77/ecommerceApp/assets/124092089/5fa5f896-1047-4cf2-a7b0-3c3bd30e6445)
 
 
-## Roadmap
+## Coupling the Backend to Frontend
 
-- Additional browser support
-
-- Add more integrations
+`Coming Soon...`
 
 
-## Usage/Examples
+## DevOps Integration
 
-```javascript
-import Component from 'my-project'
-
-function App() {
-  return <Component />
-}
-```
+`Coming Soon...`
 
 
-![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
 
