@@ -2,14 +2,14 @@ import axios from "axios";
 import { getServer } from "../util";
 import { setAuthToken } from "../util/setAuthToken";
 import {
-  SET_CURRENT_USER,
-  SUCCESSFUL_REGISTER,
-  FAILURE_REGISTER,
-  ERRORS,
   AUTH_ERROR,
-  SUCCESSFUL_LOGIN,
+  ERRORS,
   FAILURE_LOGIN,
+  FAILURE_REGISTER,
   LOGOUT,
+  SET_CURRENT_USER,
+  SUCCESSFUL_LOGIN,
+  SUCCESSFUL_REGISTER,
 } from "./types";
 
 //set a user

@@ -1,4 +1,4 @@
-import { isEmpty } from "ladash";
+
 import {
   AUTH_ERROR,
   ERRORS,
@@ -23,7 +23,7 @@ export default function (state = initialState, action) {
     case SET_CURRENT_USER:
       return {
         ...state,
-        isAuthenticated: !isEmpty(action.payload),
+        isAuthenticated: true,
         user: payload,
       };
 
