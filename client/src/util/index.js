@@ -4,9 +4,4 @@ const getServer = () => {
   return isDevelopment ? "http://localhost:5000" : "";
 };
 
-// const decodeUser = () => {
-//   const token = localStorage.getItem("token");
-//   return jwtDecode(token);
-// };
-
 export { getServer };

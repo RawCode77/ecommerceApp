@@ -1,4 +1,3 @@
-
 import {
   AUTH_ERROR,
   ERRORS,
