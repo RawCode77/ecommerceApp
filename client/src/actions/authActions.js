@@ -1,6 +1,6 @@
 import axios from "axios";
 import { getServer } from "../util";
-import { setAuthToken } from "../util/setAuthToken";
+import  setAuthToken  from "../util/setAuthToken";
 import {
   AUTH_ERROR,
   ERRORS,
@@ -11,6 +11,7 @@ import {
   SUCCESSFUL_LOGIN,
   SUCCESSFUL_REGISTER,
 } from "./types";
+
 
 //set a user
 export const setCurrentUser = (user) => async (dispatch) => {

@@ -10,8 +10,12 @@ import "./App.css";
 import Background from "./components/landing/background";
 
 //user components
-import Register from "./components/auth/Register";
 import Login from "./components/auth/Login";
+import Register from "./components/auth/Register";
+
+// const BrowserRouter  = require("react-router-dom").BrowserRouter;
+// const Route = require("react-router-dom").Route;
+// const Routes = require("react-router-dom").Routes;
 function App() {
   return (
     <Provider store={store}>
@@ -22,6 +26,7 @@ function App() {
             <Route exact path="/" element={<Background />} />
             <Route exact path="/register" element={<Register />} />
             <Route exact path="/login" element={<Login />} />
+         
           </Routes>
         </div>
       </Router>

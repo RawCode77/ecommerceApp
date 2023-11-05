@@ -23,7 +23,7 @@ export default class Login extends Component {
     // this.onSubmit = this.onSubmit.bind(this);
   
 
-  // componentWillReceiveProps(nextProps) {
+  // ComponenttWillReceiveProps(nextProps) {
   //   const search = this.props.location.search;
   //   let split = search.split("redirect=");
   //   const hasRirect = search.includes("redirect=");
